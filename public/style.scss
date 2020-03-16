@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap');
+
+$background-color: #fafcfd;
+$background-panel-color: #cccfcf;
+$default-font: 'Baloo Chettan 2', cursive;
+
+$default-border-radius: 4px;
+
+html {
+    font-size: 62.5%;
+}
+  
+
+body {
+    color: #111;   
+    background-color: $background-color;
+    font-family: $default-font;
+    text-align: center;
+    font-size: 2.2rem;
+} 
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.search-panel {
+    background-color: $background-panel-color; 
+    padding: 20px;
+    margin: 15px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.search-box {
+    padding: 0 5px;
+}
+
+.search-location {
+    height: 30px;
+    width: 80%;
+    background-color: white;
+    font-family: $default-font;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: $default-border-radius;
+    border: 2px solid #88a;
+    cursor: pointer;
+
+    @media screen and (min-width: 480px) {
+        width: auto;
+    }
+}
+
+.button {
+    font-family: $default-font;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: $default-border-radius;
+    border: 2px solid #88a;
+    box-shadow: 0 10px 3px 15px rgba(100, 120, 155, 0.1) inset;
+    cursor: pointer;
+    &:active {
+        box-shadow: 0 10px 5px 15px rgba(100, 120, 155, 0.2) inset;
+    }
+}
