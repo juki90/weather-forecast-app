@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKDtg9Nr0jiE-ndZHgDM90Smb4MOyVrAw&callback=initMap&libraries=places,geometry"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script defer src="script.js"></script>
     <title>Weather Forecast App</title> 
   </head>
@@ -21,9 +22,13 @@
             <button class="button forecast-button">
               Show forecast
             </button> 
+            <button class="button celsius"><u>°F</u>/°C</button>
         </div>
         <p class="search-info">Please, select city and press "Show weather" for today's weather or "Show forecast" for 5 day forecast</p> 
         <div class="result-today">
+
+        </div>
+        <div class="result-forecast">
 
         </div>
     </div>

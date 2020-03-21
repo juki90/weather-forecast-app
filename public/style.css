@@ -40,14 +40,83 @@ body {
     .search-location {
       width: auto; } }
 
-.button {
+button, .button {
   font-family: "Baloo Chettan 2", cursive;
   font-size: 1.8rem;
   padding: 5px 10px;
   margin: 5px;
   border-radius: 4px;
   border: 2px solid #88a;
-  box-shadow: 0 10px 3px 15px rgba(100, 120, 155, 0.1) inset;
+  box-shadow: 0 4px 13px 15px rgba(100, 120, 155, 0.1) inset;
   cursor: pointer; }
-  .button:active {
-    box-shadow: 0 10px 5px 15px rgba(100, 120, 155, 0.2) inset; }
+  button:active, .button:active {
+    box-shadow: 0 4px 15px 15px rgba(60, 100, 125, 0.54) inset; }
+  button:hover, .button:hover {
+    background-color: rgba(120, 140, 205, 0.1); }
+  button.celsius, .button.celsius {
+    margin-left: auto; }
+
+.b {
+  color: #def;
+  padding-left: 7px; }
+
+.result-today {
+  margin: 15px; }
+  .result-today > div {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    color: #aaa;
+    background-color: #444;
+    border-radius: 4px; }
+
+.result-forecast {
+  margin: 15px; }
+  .result-forecast > table {
+    padding: 10px;
+    margin: 5px;
+    color: #aaa;
+    background-color: #444;
+    border-radius: 4px; }
+
+#container {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  margin: 0 auto;
+  height: 420px; }
+
+@media screen and (min-width: 768px) {
+  #container {
+    width: 960px; } }
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  padding-right: 100px; }
+  svg .time-axis text {
+    font-size: 12px; }
+  svg .date-axis text {
+    font-size: 16px; }
+  svg text {
+    font-size: 14px; }
+
+.line {
+  fill: none;
+  stroke-width: 5px; }
+
+.date-axis line, .date-axis path {
+  stroke: none;
+  fill: none; }
+
+.time-axis line {
+  transform: scale(2), translate(0, 50px); }
+
+.date-axis text {
+  font-size: 14px;
+  font-weight: bold; }
+
+.not-hidden {
+  opacity: 1 !important; }
