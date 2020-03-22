@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "concurrently --kill-others \"nodemon server.js\" \"npm run scss-compile\"",
     "scss-compile": "node-sass --watch public/style.scss public/style.css",
