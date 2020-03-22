@@ -2,6 +2,8 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
 
+const PORT = process.env.PORT || 3000
+
 const OWM_API_KEY =  process.env.OPEN_WEATHER_MAP_KEY,
       express = require('express'),
       axios = require('axios'),
@@ -34,6 +36,6 @@ app.post('/forecast', (req, res) => {
       })
 })
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('Server started')
 })
