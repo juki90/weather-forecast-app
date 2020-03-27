@@ -2,3 +2,4 @@ build
 .env
 node
 node_modules
+publice/.sass-cache

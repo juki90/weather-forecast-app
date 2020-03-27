@@ -76,20 +76,13 @@ button, .button {
     }
 }
 
-.b {
-    color: #def;
-    padding-left: 7px;
-}
-
 .result-today {
     margin: 15px;
-    & > div {
-        display: flex;
+    & > * {
+        margin: 0 auto;
+        color: black;
         padding: 10px;
         margin: 5px;
-        color: #aaa;
-        background-color: $background-result-color;
-        border-radius: $default-border-radius;
     }
 }
 

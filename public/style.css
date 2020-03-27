@@ -56,19 +56,13 @@ button, .button {
   button.celsius, .button.celsius {
     margin-left: auto; }
 
-.b {
-  color: #def;
-  padding-left: 7px; }
-
 .result-today {
   margin: 15px; }
-  .result-today > div {
-    display: flex;
+  .result-today > * {
+    margin: 0 auto;
+    color: black;
     padding: 10px;
-    margin: 5px;
-    color: #aaa;
-    background-color: #444;
-    border-radius: 4px; }
+    margin: 5px; }
 
 .result-forecast {
   margin: 15px; }
