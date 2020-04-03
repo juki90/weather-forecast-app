@@ -40,7 +40,8 @@ body {
     .search-location {
       width: auto; } }
 
-button, .button {
+button,
+.button {
   font-family: "Baloo Chettan 2", cursive;
   font-size: 1.8rem;
   padding: 5px 10px;
@@ -49,11 +50,14 @@ button, .button {
   border: 2px solid #88a;
   box-shadow: 0 4px 13px 15px rgba(100, 120, 155, 0.1) inset;
   cursor: pointer; }
-  button:active, .button:active {
+  button:active,
+  .button:active {
     box-shadow: 0 4px 15px 15px rgba(60, 100, 125, 0.54) inset; }
-  button:hover, .button:hover {
+  button:hover,
+  .button:hover {
     background-color: rgba(120, 140, 205, 0.1); }
-  button.celsius, .button.celsius {
+  button.celsius,
+  .button.celsius {
     margin-left: auto; }
 
 .result-today {
@@ -101,7 +105,8 @@ svg {
   fill: none;
   stroke-width: 5px; }
 
-.date-axis line, .date-axis path {
+.date-axis line,
+.date-axis path {
   stroke: none;
   fill: none; }
 
@@ -114,3 +119,6 @@ svg {
 
 .not-hidden {
   opacity: 1 !important; }
+
+.error-text {
+  color: #dd0000; }

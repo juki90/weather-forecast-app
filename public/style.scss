@@ -1,156 +1,162 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap");
 
 $background-color: #fafcfd;
 $background-panel-color: #cccfcf;
 $background-result-color: #444;
-$default-font: 'Baloo Chettan 2', cursive;
+$default-font: "Baloo Chettan 2", cursive;
 
 $default-border-radius: 4px;
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-  
+
 body {
-    color: #111;   
-    background-color: $background-color;
-    font-family: $default-font;
-    text-align: center;
-    font-size: 2.2rem;
-} 
+  color: #111;
+  background-color: $background-color;
+  font-family: $default-font;
+  text-align: center;
+  font-size: 2.2rem;
+}
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .search-panel {
-    background-color: $background-panel-color; 
-    padding: 20px;
-    margin: 15px;
+  background-color: $background-panel-color;
+  padding: 20px;
+  margin: 15px;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .search-box {
-    padding: 0 5px;
+  padding: 0 5px;
 }
 
 .search-location {
-    height: 30px;
-    width: 80%;
-    background-color: white;
-    font-family: $default-font;
-    font-size: 1.8rem;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: $default-border-radius;
-    border: 2px solid #88a;
-    cursor: pointer;
+  height: 30px;
+  width: 80%;
+  background-color: white;
+  font-family: $default-font;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: $default-border-radius;
+  border: 2px solid #88a;
+  cursor: pointer;
 
-    @media screen and (min-width: 480px) {
-        width: auto;
-    }
+  @media screen and (min-width: 480px) {
+    width: auto;
+  }
 }
 
-button, .button {
-    font-family: $default-font;
-    font-size: 1.8rem;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: $default-border-radius;
-    border: 2px solid #88a;
-    box-shadow: 0 4px 13px 15px rgba(100, 120, 155, 0.1) inset;
-    cursor: pointer;
-    &:active {
-        box-shadow: 0 4px 15px 15px rgba(60, 100, 125, 0.54) inset; 
-    }
-    &:hover {
-        background-color: rgba(120, 140, 205, 0.1);
-    }
-    &.celsius {
-        margin-left: auto;
-    }
+button,
+.button {
+  font-family: $default-font;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: $default-border-radius;
+  border: 2px solid #88a;
+  box-shadow: 0 4px 13px 15px rgba(100, 120, 155, 0.1) inset;
+  cursor: pointer;
+  &:active {
+    box-shadow: 0 4px 15px 15px rgba(60, 100, 125, 0.54) inset;
+  }
+  &:hover {
+    background-color: rgba(120, 140, 205, 0.1);
+  }
+  &.celsius {
+    margin-left: auto;
+  }
 }
 
 .result-today {
-    margin: 15px;
-    & > * {
-        margin: 0 auto;
-        color: black;
-        padding: 10px;
-        margin: 5px;
-    }
+  margin: 15px;
+  & > * {
+    margin: 0 auto;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+  }
 }
 
 .result-forecast {
-    margin: 15px;
-    & > table {
-        padding: 10px;
-        margin: 5px;
-        color: #aaa;
-        background-color: $background-result-color;
-        border-radius: $default-border-radius;
-    }
+  margin: 15px;
+  & > table {
+    padding: 10px;
+    margin: 5px;
+    color: #aaa;
+    background-color: $background-result-color;
+    border-radius: $default-border-radius;
+  }
 }
 
 #container {
-    position: relative;   
-    width: 100%;
-    overflow-x: scroll;
-    margin: 0 auto; 
-    height: 420px;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  margin: 0 auto;
+  height: 420px;
 }
 
 @media screen and (min-width: 768px) {
-    #container {
-        width: 960px;
-    }          
+  #container {
+    width: 960px;
+  }
 }
 
 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    padding-right: 100px;
-    .time-axis  {
-        text {
-            font-size: 12px;
-        }
-    }
-    .date-axis  {
-        text {
-            font-size: 16px;
-        }
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  padding-right: 100px;
+  .time-axis {
     text {
-        font-size: 14px;
+      font-size: 12px;
     }
+  }
+  .date-axis {
+    text {
+      font-size: 16px;
+    }
+  }
+  text {
+    font-size: 14px;
+  }
 }
 
-.line {							
-    fill: none;	
-    stroke-width: 5px;			
+.line {
+  fill: none;
+  stroke-width: 5px;
 }
 
-.date-axis line, .date-axis path {
-    stroke: none;
-    fill: none;
+.date-axis line,
+.date-axis path {
+  stroke: none;
+  fill: none;
 }
 
 .time-axis line {
-    transform: scale(2), translate(0, 50px);
+  transform: scale(2), translate(0, 50px);
 }
 
 .date-axis text {
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .not-hidden {
-    opacity: 1 !important;
+  opacity: 1 !important;
+}
+
+.error-text {
+  color: #dd0000;
 }
